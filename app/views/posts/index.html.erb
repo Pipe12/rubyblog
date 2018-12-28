@@ -3,7 +3,7 @@
   <% @posts.each do |post| %>
     <div class="row mt-5">
       <div class="col-10 offset-1">
-        <h1><%= link_to post.title, '#' %></h1> 
+        <h1><%= link_to post.title, post_path(post.id) %></h1> 
         <div class="text-muted">Publicado por put my user name hace menos de 1 minuto</div>
         <p class="mt-3"><%= post.body %></p>
         <%= link_to 'Editar', '#' %>
