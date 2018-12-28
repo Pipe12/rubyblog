@@ -12,9 +12,9 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <div class="container">
-        <span class="navbar-brand">SuperBlog</span>
+        <%= link_to 'SuperBlog', root_path, class: 'navbar-brand' %>
         <ul class="navbar-nav navbar-expand">
-          <li class="nav-item"><%= link_to 'Nuevo post', '#', class: 'nav-link ml-3' %>
+          <li class="nav-item"><%= link_to 'Nuevo post', new_post_path, class: 'nav-link ml-3' %>
           <li class="nav-item"><%= link_to 'Salir', '#', class: 'nav-link ml-3' %>
           <li class="nav-item"><%= link_to 'Ingresar', '#', class: 'nav-link ml-3' %>
           <li class="nav-item"><%= link_to 'Registrase', '#', class: 'nav-link ml-3' %>
