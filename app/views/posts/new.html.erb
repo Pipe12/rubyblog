@@ -1,11 +1,15 @@
 <div class="container">
+
   <div class="col-10 offset-1">
+
     <div class="mt-4">
        <%= link_to 'Volver', posts_path %>
     </div>
+
     <div class="row">
       <h1 class="mt-4">Nuevo post</h1>
     </div>
+
     <% if @post.errors.any? %>
       <div class="alert alert-danger mt-3" role="alert">
         <h3>
@@ -19,7 +23,7 @@
       </div>
     <% end %>
 
-    <%= form_with scope: :post, url: posts_path, local: true do |form| %>
+    <%= form_for @post do |form| %>
       <form class="mt-2">
         <div class="form-group">
           <%= form.label :titulo %>
