@@ -12,7 +12,7 @@
     <div class="row">
       <p class="col-12 mt-3"><%= @post.body %></p>
     </div>
-
+    
     <!-- Comments -->
     <% if @post.comments.any? %>
       <div class="mt-3">
@@ -28,7 +28,7 @@
           </div>
         <% end %>
       </div>
-    <% else %> 
+    <% else %>
       <div class="mt-3">
         <h3>No hay comentarios</h3>
       </div>
