@@ -6,8 +6,8 @@
         <h1><%= link_to post.title, post_path(post.id) %></h1>
         <div class="text-muted"> <%=  time_ago_in_words(post.created_at) %></div>
         <p class="mt-3"><%= markdown(post.body[0..250]) %></p>
-        <%= link_to 'Editar', edit_post_path(post.id) %>
-        <%= link_to 'Eliminar', post_path(post.id), method: :delete, data: {confirm: 'Estas seguro ?'}, class: "pl-3"%>
+        <%= link_to content_tag(:i, '',class: ['fas', 'fa-pencil-alt']) + " Editar", edit_post_path(post.id) %>
+        <%= link_to content_tag(:i, '',class: ['fas', 'fa-trash-alt']) + " Eliminar", post_path(post.id), method: :delete, data: {confirm: 'Estas seguro ?'}, class: "pl-3"%>
       </div>
     </div>
   <% end %>
