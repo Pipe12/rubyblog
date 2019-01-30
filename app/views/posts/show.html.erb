@@ -10,7 +10,9 @@
       </div>
     </div>
     <div class="row">
-      <p class="col-12 mt-3"><%= @post.body %></p>
+      <div class="col-12 mt-3">
+        <%= markdown(@post.body) %>
+      </div>
     </div>
 
     <!-- Comments -->
